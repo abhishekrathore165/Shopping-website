@@ -11,7 +11,7 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/E-commerce')
+mongoose.connect('mongodb+srv://rathore:rathore@cluster0.emtgbjp.mongodb.net/E-commerce?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => console.log("connected"))
 
 app.get("/", (req, res) => {
